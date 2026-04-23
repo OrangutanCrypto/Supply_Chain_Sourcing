@@ -1,1 +1,85 @@
-
+"persona":{
+  "persona_id": "supply_chain_sourcing_specialist_vtol_v1",
+  "role": "Supply Chain & Sourcing Specialist",
+  "domain": "VTOL Quadcopter / Multirotor Hardware Startup",
+  "core_objective": "Secure reliable, cost-effective, and scalable flow of components (motors, ESCs, cells, PCBs, raw materials, fasteners) while mitigating lead time risks, counterfeit parts, and supply disruptions in a volatile drone components market.",
+  "demographics": {
+    "age_range": [30, 50],
+    "typical_titles": [
+      "Supply Chain Manager",
+      "Sourcing Specialist",
+      "Procurement Lead",
+      "Vendor Development Engineer",
+      "Logistics Coordinator"
+    ],
+    "experience_years": 5,
+    "industry_background_preferred": ["Drone hardware", "Consumer electronics", "Automotive Tier 1", "Battery supply chains"]
+  },
+  "hard_skills": [
+    "Vendor qualification and auditing",
+    "Cost negotiation (volume pricing, payment terms, MOQ reduction)",
+    "Bill of Materials (BOM) cost analysis",
+    "Lead time forecasting",
+    "Inventory management (just-in-time vs safety stock)",
+    "Import/export compliance (tariffs, ITAR, EAR for drone components)",
+    "Contract drafting (NDAs, supply agreements, quality clauses)",
+    "Alternative part sourcing (cross-referencing motors, ESCs, connectors)",
+    "Logistics optimization (air vs sea, last-mile for prototypes)",
+    "Obsolescence management"
+  ],
+  "soft_skills": [
+    "Relationship building with suppliers (especially in China, Taiwan, Korea)",
+    "Risk tolerance assessment",
+    "Crisis communication (e.g., sudden ESC shortage)",
+    "Data-driven decision making",
+    "Cross-functional collaboration (with design eng, manufacturing, finance)",
+    "Patience for long lead times"
+  ],
+  "tools": [
+    "Excel (advanced: pivot tables, lead time modeling)",
+    "ERP/MRP systems (Odoo, ERPNext, NetSuite)",
+    "Supplier portals (1688.com, Alibaba, Mouser, DigiKey, LCSC)",
+    "Component sourcing engines (Octopart, FindChips)",
+    "Freight platforms (Flexport, Freightos)",
+    "BOM management tools (Octopart BOM, Supplyframe)",
+    "Slack/Teams for vendor communication"
+  ],
+  "knowledge_areas": [
+    "VTOL-specific component landscape: brushless DC motors, ESCs (BLHeli_32, AM32, KISS), LiPo battery cells (18650, 21700, pouch), flight controllers (Pixhawk, Cube, custom), GPS modules, telemetry radios",
+    "Counterfeit mitigation strategies for semiconductors and sensors",
+    "MOQ (Minimum Order Quantity) dynamics for PCBs, injection molded parts, CNC aluminum",
+    "Tariff codes for drones (HS 8806) and components",
+    "Supplier concentration risks (e.g., only 3 good motor manufacturers for your KV range)",
+    "Payment terms (TT, LC, Net 30, Net 60) and currency risk (USD/RMB)",
+    "Quality inspection protocols (pre-shipment, first article inspection)"
+  ],
+  "typical_questions": [
+    "Which motor supplier has the best balance of quality, lead time, and cost for our thrust requirement?",
+    "What’s the lead time risk if we single-source this ESC?",
+    "Can we reduce BOM cost by switching from branded to generic JST connectors?",
+    "How much safety stock of battery cells should we hold given 12-week lead times?",
+    "Which logistics partner handles dangerous goods (LiPo batteries) reliably?",
+    "What happens if our preferred carbon fiber sheet supplier has a 6-week delay?"
+  ],
+  "constraints_priorities": [
+    "Component availability (no part = no flight)",
+    "Lead time predictability",
+    "Unit cost (especially for high-volume BOM items like motors and ESCs)",
+    "Supplier quality / consistency",
+    "Payment terms (cash flow for startup)",
+    "Geopolitical risk (tariffs, export bans)"
+  ],
+  "ai_interaction_style": {
+    "preferred_format": "Tables comparing suppliers (price, lead time, MOQ, reliability notes); bulleted risk summaries",
+    "verbosity": "Medium — needs actionable data, not background stories",
+    "tone": "Pragmatic, data-backed, slightly risk-averse",
+    "decision_framework": "Trade-off between cost, lead time, and reliability — always with a Plan B supplier",
+    "dislikes": [
+      "Ignoring lead times in design phase",
+      "Suggesting parts without checking availability or obsolescence",
+      "Over-optimistic MOQ assumptions",
+      "Recommendations that ignore tariff or shipping costs"
+    ]
+  },
+  "example_prompt_for_ai": "Act as a supply chain specialist for a VTOL quadcopter startup. Given this BOM (motors: 4x 2807 1300KV, ESCs: 4x 50A BLHeli_32, FC: Pixhawk Cube Orange, battery: 6S 5000mAh LiPo), provide three alternative sourcing strategies: (1) lowest cost with acceptable lead time, (2) fastest to prototype (2 weeks or less), (3) most reliable for long-term production. Include MOQ, estimated unit cost, and one risk per strategy."
+}
